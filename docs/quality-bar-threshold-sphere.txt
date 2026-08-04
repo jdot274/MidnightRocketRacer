@@ -1,0 +1,28 @@
+CANONICAL FINAL — Silver Threshold Sphere on black (Claude Code / Ball Lab)
+
+Live:
+  https://vanguard-golf-game-v2.vercel.app/creator/transparent.html
+
+Local dist (built):
+  C:\Users\joeyw\Documents\Cursor-Agent-Pipeline\deploy\vanguard-golf-game-v2\creator\transparent.html
+  C:\Users\joeyw\Documents\vanguard-golf\ball-lab\dist\transparent.html
+
+Source (final host, black #000 background):
+  C:\Users\joeyw\Documents\vanguard-golf\ball-lab\src\transparent-main.jsx
+  C:\Users\joeyw\Projects\vanguard-golf\ball-lab\src\transparent-main.jsx
+  C:\Users\joeyw\Documents\Cursor-Agent-Pipeline\runtime\vanguard-ball-creator-v1\src\transparent-main.jsx
+
+Isolation:
+  ...\src\spline\isolateSphere.js
+
+Scene URL:
+  https://prod.spline.design/SjNY5eqeMhj-USkx/scene.splinecode
+
+Skill (do not reinvent):
+  C:\Users\joeyw\Documents\Cursor-Agent-Pipeline\.cursor\skills\spline-threshold-isolate\SKILL.md
+  (also mirrored under ~/.claude/skills/spline-threshold-isolate when present)
+
+NOT the final look:
+  Ball Lab creator index with UI chrome
+  ThresholdSphere.jsx R3F prop path alone (lab pedestal framing)
+  Thin neon-track racer demos
