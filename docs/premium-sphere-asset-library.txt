@@ -1,0 +1,49 @@
+PREMIUM SPHERE / MATERIAL REFERENCE LIBRARY
+Source: [Find premium sphere assets](c422e9f6-c977-43f6-af73-d3a932073d89) — 2026-08-03
+Canonical visual bar remains docs/quality-bar-threshold-sphere.txt (Ball Lab silver sphere on black).
+These paths are local reference / harvest sources for car paint, world heroes, undulating surfaces.
+
+=== 1. Metal / chrome / gold spheres (Unreal showcase) ===
+C:\Users\joeyw\Desktop\BlurFocus\Saved\AssetShowcase\
+  Heroes (~1.6MB each): MI_Gold, MI_PolishedChrome, MI_BlackChrome, MI_Copper,
+  MI_Pearlescent, MI_TriplanarShowpiece, MI_AmberCrystal, MI_EnergyCorePurple,
+  MI_BlueTintedGlass, MI_ClearGlass, MI_FrostedGlass, MI_BrushedSteel,
+  MI_WhiteMarble, MI_HologramCyan, MI_NeonPink, MI_Wax + manifest.json
+  Reuse: car paint / trim PBR library
+
+C:\Users\joeyw\Desktop\AssetPreviews\
+  512px thumbs of the same library (M_Gold, M_PolishedChrome, …)
+
+C:\Users\joeyw\Desktop\FresnelSphereGame\Windows\
+  Source Unreal project for fresnel/metal sphere materials
+
+=== 2. Refract watch-face AAA demos ===
+C:\Users\joeyw\Desktop\Refract\deploy_v40_master\assets\prem_watch3d.v1.png
+  Magenta dotted undulating sphere in dark bezel — hero quality still
+C:\Users\joeyw\Desktop\Refract\deploy_v40_master\assets\chronograph.glb  (~7.1MB)
+C:\Users\joeyw\Desktop\Refract\exports\refract-presets-teaser-hd-v1.mp4  (~20.8MB)
+C:\Users\joeyw\Desktop\Refract_Motion_Studio_v2\verification\recorded_timeline_v2.webm
+C:\Users\joeyw\Desktop\Refract\_sheet\  (Liquid_* contact sheets)
+C:\Users\joeyw\Desktop\Refract\deploy_v40_master\REFRACT_MASTER_v39.html
+C:\Users\joeyw\Desktop\Refract\deploy_v40_master\REFRACT_ANIMATED_SHOWCASE.html
+
+=== 3. Spline-extracted energy orbs ===
+C:\Users\joeyw\Desktop\Refract\_orb_v17.png  (+ _orb_v2, _orb_check, _orchid_check)
+C:\Users\joeyw\Desktop\Refract\ANTIGRAVITY\MOBILE\  (smartwatch extract proofs)
+
+=== 4. Undulating / LEDVolume / golf-wave (no literal "4 spheres" video on disk) ===
+C:\Users\joeyw\Desktop\LEDVolume_Waves_scene_v03…v09_*.blend
+  Best polish candidate: v07_BEAUTIFUL_SDF_EMBOSS_GOLF (~19.6MB)
+C:\Users\joeyw\Staged_Blends\iridescent_dotted_wave.blend
+C:\Users\joeyw\Converted_GLBs\iridescent_dotted_wave.glb  (ready import)
+C:\Users\joeyw\Staged_Blends\flat_rounded_led_displacement_board_v1.blend
+C:\Users\joeyw\Converted_GLBs\flat_rounded_led_displacement_board_v1.glb
+C:\Users\joeyw\Documents\Cursor-Agent-Pipeline\runtime\blue-sphere-shader-v1\export\BlueSphereShader_v1_bake.glb
+
+DO NOT USE (0-byte placeholders — re-export from Desktop .blend):
+  C:\Users\joeyw\Downloads\LEDVolume_Waves.glb
+  C:\Users\joeyw\Downloads\GlassLED_Slab.glb
+
+Closest videos if needed (not the 4-sphere clip):
+  refract-presets-teaser-hd-v1.mp4
+  C:\Users\joeyw\Videos\Captures\Run 2026-08-01 20-21-26.mp4  (gameplay capture — only if that was the intended clip)

@@ -26,3 +26,6 @@ NOT the final look:
   Ball Lab creator index with UI chrome
   ThresholdSphere.jsx R3F prop path alone (lab pedestal framing)
   Thin neon-track racer demos
+
+Local premium harvest library (materials / undulating refs — not the live canon):
+  docs/premium-sphere-asset-library.txt
