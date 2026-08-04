@@ -20,7 +20,7 @@ import { createHUD, updateHUD }                     from './hud.js';
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.toneMapping         = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.1;
+renderer.toneMappingExposure = 1.0;
 renderer.outputColorSpace    = THREE.SRGBColorSpace;
 document.getElementById('app').appendChild(renderer.domElement);
 
@@ -35,9 +35,9 @@ const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
 composer.addPass(new UnrealBloomPass(
   new THREE.Vector2(window.innerWidth, window.innerHeight),
-  1.15,  // strength
-  0.60,  // radius
-  0.55   // threshold
+  0.55,  // strength — restrained; canon is thin crisp lines, not glow soup
+  0.30,  // radius
+  0.80   // threshold — only true emissives bloom
 ));
 composer.addPass(new OutputPass());
 

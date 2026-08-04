@@ -39,10 +39,10 @@ function glassPanel(w, h) {
     color:       new THREE.Color(0xddeeff),
     transmission: 0.92,
     thickness:    0.35,
-    roughness:    0.55,
+    roughness:    0.28,
     ior:          1.2,
     transparent:  true,
-    opacity:      0.98,
+    opacity:      0.55,
     side:         THREE.DoubleSide,
   });
   return new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
@@ -167,7 +167,7 @@ export function createHUD(scene, camera) {
     new THREE.MeshStandardMaterial({
       color:             0x000000,
       emissive:          new THREE.Color(0x57ff6b),
-      emissiveIntensity: 2.8,
+      emissiveIntensity: 1.3,
     })
   );
   // Position so left edge of bar sits at x = -0.36 (local to leftGroup),

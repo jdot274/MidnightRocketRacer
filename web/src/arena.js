@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { Reflector } from 'three/addons/objects/Reflector.js';
 import { boostPadVertex, boostPadFragment } from './shaders/boostPad.js';
+import { trackEnergyVertex, trackEnergyFragment } from './shaders/trackEnergy.js';
 
 export const PALETTE = {
   ink: 0x05060a,
@@ -39,6 +40,19 @@ export function createArena(scene) {
 
   const trackMesh = buildRibbon(curve, TRACK_WIDTH);
   group.add(trackMesh);
+
+  // One-off iridescent dotted-wave energy overlay riding the ribbon.
+  const trackEnergyMaterial = new THREE.ShaderMaterial({
+    vertexShader: trackEnergyVertex,
+    fragmentShader: trackEnergyFragment,
+    uniforms: { uTime: { value: 0 } },
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+  });
+  const trackOverlay = new THREE.Mesh(trackMesh.geometry, trackEnergyMaterial);
+  trackOverlay.position.y = 0.06;
+  group.add(trackOverlay);
 
   const rails = buildRails(curve, TRACK_WIDTH);
   rails.forEach((rail) => group.add(rail));
@@ -121,11 +135,11 @@ function buildRails(curve, width) {
       points.push(point.clone().addScaledVector(side, offset).add(new THREE.Vector3(0, 0.9, 0)));
     }
     const railCurve = new THREE.CatmullRomCurve3(points, true);
-    const geometry = new THREE.TubeGeometry(railCurve, 420, 0.32, 8, true);
+    const geometry = new THREE.TubeGeometry(railCurve, 420, 0.18, 8, true);
     const material = new THREE.MeshStandardMaterial({
       color: 0x000000,
       emissive: new THREE.Color(colors[index]),
-      emissiveIntensity: 3.2,
+      emissiveIntensity: 1.6,
     });
     return new THREE.Mesh(geometry, material);
   });
@@ -170,7 +184,7 @@ function buildGates(curve, group) {
     const pillarMaterial = new THREE.MeshStandardMaterial({
       color: 0x000000,
       emissive: new THREE.Color(color),
-      emissiveIntensity: 2.6,
+      emissiveIntensity: 1.5,
     });
 
     for (const direction of [-1, 1]) {
@@ -185,7 +199,7 @@ function buildGates(curve, group) {
       new THREE.MeshStandardMaterial({
         color: 0x000000,
         emissive: new THREE.Color(color),
-        emissiveIntensity: 3.0,
+        emissiveIntensity: 1.8,
       })
     );
     beam.position.copy(point);
