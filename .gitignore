@@ -13,6 +13,9 @@ Saved/
 web/node_modules/
 web/dist/
 web/.vite/
+web-r3f/node_modules/
+web-r3f/dist/
+web-r3f/.vite/
 
 # OS
 Thumbs.db
