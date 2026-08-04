@@ -46,13 +46,13 @@ export function createCar(scene) {
   const engineGlowMaterial = new THREE.MeshStandardMaterial({
     color: 0x000000,
     emissive: new THREE.Color(PALETTE.lime),
-    emissiveIntensity: 1.1,
+    emissiveIntensity: 0.75,
   });
   const engine = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.4, 0.25), engineGlowMaterial);
   engine.position.set(0, 0.45, 2.65);
   group.add(engine);
 
-  const boostLight = new THREE.PointLight(PALETTE.lime, 14, 18, 2);
+  const boostLight = new THREE.PointLight(PALETTE.lime, 4, 14, 2);
   boostLight.position.set(0, 0.6, 3.4);
   group.add(boostLight);
 
@@ -159,7 +159,7 @@ export function updateCar(car, input, trackMesh, dt, raceActive) {
   const boosting = input.boost && car.boost > 0 && raceActive;
   car.engineGlowMaterial.emissiveIntensity = THREE.MathUtils.lerp(
     car.engineGlowMaterial.emissiveIntensity,
-    boosting ? 4.5 : 1.1,
+    boosting ? 3.5 : 0.75,
     dt * 8
   );
   car.boostLight.intensity = THREE.MathUtils.lerp(car.boostLight.intensity, boosting ? 320 : 60, dt * 8);

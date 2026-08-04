@@ -74,7 +74,7 @@ export function createArena(scene) {
 
   const spawn = getSpawn(curve, 0.005);
 
-  return { group, curve, trackMesh, boostPads, gates, spawn };
+  return { group, curve, trackMesh, trackEnergyMaterial, boostPads, gates, spawn };
 }
 
 function buildRibbon(curve, width) {

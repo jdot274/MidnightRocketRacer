@@ -155,7 +155,8 @@ function frame() {
   const raceActive = isRaceActive(race);
   updateCar(car, input, arena.trackMesh, dt, raceActive);
 
-  // ── Boost pads ────────────────────────────────────────────────────────────
+  // ── Shaders & boost pads ──────────────────────────────────────────────────
+  arena.trackEnergyMaterial.uniforms.uTime.value += dt;
   for (const pad of arena.boostPads) {
     pad.material.uniforms.uTime.value += dt;
     pad.cooldown = Math.max(0, pad.cooldown - dt);
