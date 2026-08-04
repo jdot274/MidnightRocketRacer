@@ -1,0 +1,19 @@
+# Unreal Engine generated
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+
+# Web
+web/node_modules/
+web/dist/
+web/.vite/
+
+# OS
+Thumbs.db
+Desktop.ini
